@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ведущий Эльдар</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000; /* чёрный фон */
+    color: #ffffff; /* белый текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Верхний блок: фото + заголовок */
+  .top-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .top-section img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .top-text {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  /* Средний блок: текст + фото справа */
+  .middle-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .middle-text {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.8;
+  }
+
+  .middle-section img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .top-section, .middle-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .top-text {
+      text-align: center;
+    }
+    .middle-text {
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Верхний блок: фото + заголовок -->
+  <div class="top-section">
+    <img src="https://via.placeholder.com/300x300.png?text=Фото+1" alt="Главное фото">
+    <div class="top-text">Ведущий Эльдар</div>
+  </div>
+
+  <!-- Средний блок: текст + фото справа -->
+  <div class="middle-section">
+    <div class="middle-text">
+      Более 10 лет опыта работы<br><br>
+      1. Свадьбы<br>
+      2. Открытия<br>
+      3. Презентации<br>
+      4. Дни рождения | юбилей<br>
+      5. Тимбилдинги
+    </div>
+    <img src="https://via.placeholder.com/300x300.png?text=Фото+2" alt="Фото рядом с текстом">
+  </div>
+
+</div>
+
+</body>
+</html>
